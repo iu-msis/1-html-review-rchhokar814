@@ -9,13 +9,16 @@ h1{
 }
 nav {
     margin-top:10px;
-    color: aqua;
+
 }
 
 a{
-    color: aqua;
+    color: navy;
 }
 
+footer{
+    font-size: x-small;
+}
 
 tr:hover {
     cursor: pointer;
@@ -30,6 +33,7 @@ tr:hover {
 
 p.interests {
     color: #990000;
+    background-color: floralwhite;
 }
 
 #header{
@@ -47,6 +51,7 @@ h2{
 
 h4{
      color:#990000;
+     background-color: floralwhite;
 }
 
 .decision_nav {
