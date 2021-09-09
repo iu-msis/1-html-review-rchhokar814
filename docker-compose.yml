@@ -1,8 +1,10 @@
 version: "3"
 services:
-    msis-html-practice:
-        build: .
-        ports:
-            - "8080:80"
-        volumes:
-            - "./public:/var/www/html"
+  app:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app/public:/srv/app/public
+
+            
