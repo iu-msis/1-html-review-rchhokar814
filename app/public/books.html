@@ -5,13 +5,17 @@
         
     <title>Books</title>   
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.24/datatables.min.css" />
+    <link rel = "stylesheet" href = "css/hw.css">
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.24/datatables.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
+   
+
     </header>
-   <link rel = "stylesheet" href = "css/hw.css">
+   
+   
 </head>    
 <body>
     
@@ -36,16 +40,18 @@
         <h2>Book Database</h2>
         <div class = "row">
         <table id="taskTable" class = "table table-bordered table-striped table-hover">
+          
             <thead>
                 <tr>
-                    <th class="headerSortDown">Title</th>
-                    <th class="headerSortUp">Author</th>
-                    <th class="headerSortDown">Year Published</th>
-                    <th class="headerSortUp">Publisher</th>
-                    <th class="headerSortUp">Page Count</th>
-                    <th class="headerSortDown">MSRP</th>
+                    <th>Title</th></span>
+                    <th>Author</th>
+                    <th>Year Published</th>
+                    <th>Publisher</th>
+                    <th>Page Count</th>
+                    <th>MSRP</th>
                 </tr>
             </thead>
+           
             <tbody>
                 <tr>
                     <td>Dracula</td>
