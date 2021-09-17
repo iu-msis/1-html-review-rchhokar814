@@ -36,7 +36,7 @@
             <h2>{{person.name.first}} {{person.name.last}}</h2>
             
             <h4>Country: {{person.location.country}}</h4>
-            <h4>Birthdate: {{person.dob.date}}</h4>
+            <h4>Birthdate: {{person.dob.date[0]+person.dob.date[1]+person.dob.date[2]+person.dob.date[3]+person.dob.date[4]+person.dob.date[5]+person.dob.date[6]+person.dob.date[7]+person.dob.date[8]+person.dob.date[9]}}</h4>
             <h4>Age: {{person.dob.age}}</h4>
             <h4>Email: <a v-bind:href="'mailto:'+person.email">{{person.email}}</a></h4>
 
