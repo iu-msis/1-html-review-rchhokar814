@@ -9,10 +9,8 @@
 <link rel = "stylesheet" href = "css/hw.css" type="text/css">
 
 <!-- Importing Vue -->
-
 <title>Home_Page</title> 
 <script src="https://unpkg.com/vue@next"></script>
-
 </head> 
 <body>
     <nav class="navbar navbar-inverse navbar-fixed-bottom">
@@ -26,11 +24,11 @@
              </div>
     </nav>  
 
-    <div class="container">
+    <div id="offerApp" class="container">
         <div class="row align-items-start">
-          <div class="col col-4">
-          </div>
-          <div id="offerApp" class="col col-8">
+          <div class="col col-4"></div>
+
+          <div class="col col-8">
             <form v-on:submit.prevent="fetchUserData">
               <button type="submit">Reload</button>
             </form>
@@ -44,7 +42,7 @@
             <h4>Email: <a v-bind:href="'mailto:'+person.email">{{person.email}}</a></h4>
 
             <img v-bind:src="person.picture.large">
-
+           
 
           </div>
 

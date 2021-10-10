@@ -5,19 +5,21 @@ const Offer = {
       }
   },
 
+
   computed: {   
     prettyBirthday(){
       return dayjs(this.person.dob.date).format('D MMM YYYY');
     }
   },
   
-  methods: {
+
+ methods: {
     fetchUserData() {
       fetch('https://randomuser.me/api/')
       .then(response => response.json())
       .then((parsedJson) => 
       {
-          console.log(parsedJson);
+         console.log(parsedJson);
           this.person = parsedJson.results[0]
       })
 
@@ -28,8 +30,8 @@ const Offer = {
     }
   },
 
-  created() {
-     this.fetchUserData();
+created() {
+    this.fetchUserData();
   }
 }
 
